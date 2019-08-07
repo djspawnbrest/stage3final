@@ -23,7 +23,7 @@ export default class RegistrationForm {
     }
 
     setAttributes() {
-        this.greetingText.textContent = 'Welcome to Chat UI! Please sign up to begin';
+        this.greetingText.textContent = 'Welcome to Chat UI! Please sign up to Chat:';
         this.nickName.setAttribute('placeholder', 'Enter Your Nickname');
         this.nickName.setAttribute('required', true);
         this.regFormSubmit.textContent = 'Sign up';
