@@ -1,4 +1,5 @@
 import DomNode from '../view/DomNode';
+import { w3cwebsocket as W3CWebSocket } from "websocket";
 
 const popupIcon = require('../../images/messageIcon.png');
 
@@ -15,7 +16,7 @@ export default class WebSocketModel {
     }
 
     start() {
-        this.ws = new WebSocket(this.url);
+        this.ws = new W3CWebSocket(this.url);
         this.ws.onopen = () => this.openWS();
         this.ws.onmessage = (event) => this.getMessage(event);
         this.ws.onclose = () => this.closeWS();
