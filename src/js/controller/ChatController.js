@@ -5,7 +5,7 @@ import RegistrationFormController from './RegistrationFormController';
 class ChatController {
     constructor() {
         this.parent = document.querySelector('.App');
-        this.url = 'ws://st-chat.shas.tel';
+        this.url = 'wss://wssproxy.herokuapp.com';
 
         if (localStorage.getItem('active')) {
             const user = {};
